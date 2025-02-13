@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Khamsavanh Vanvilay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe4e1, #ffb6c1);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            background-color: #F72585;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .file-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .food-menu {
+            margin-top: 20px;
+        }
+
+        .food-menu select {
+            margin-bottom: 10px;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .action-buttons button {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Mr Khamsavanh Vanvilay</i></h1>
+    <h1><i>Number:75</i></h1>
+    <h1><i>2COM2</i></h1>
+    <div class="container">
+        <h1><i>Choose The Food menu</i></h1>
+        <form>
+            <label for="tel"><i>Tel</i>:</label>
+            <input type="text" id="tel" name="tel" placeholder="Add the phone number">
+
+            <label for="email"><i>E-mail</i>:</label>
+            <input type="email" id="email" name="email" placeholder="Please enter your e-mail address">
+
+            <label for="name"><i>Name & Surname:</i></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="password"><i>Password:</i></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="address"><i>Address:</i></label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+
+            <label for="update"><i>Update:</i></label>
+            <textarea id="update" name="update" placeholder="Write your update..."></textarea>
+
+            <label for="upload"><i>Upload File:</i></label>
+            <div class="file-input">
+                <input type="file" id="upload" name="upload">
+            </div>
+
+            <div class="food-menu">
+                <label for="food"><i>Food Menu:</i></label>
+                <select name="food" id="food">
+                    <option value="soup"><i>Pizza</i></option>
+                    <option value="papaya"><i>Sushi</i></option>
+                    <option value="noodles"><i>Steak</i></option>
+                    <option value="salad"><i>Salad</i></option>
+                </select>
+                <button type="button"><i>Cook</i></button>
+            </div>
+
+            <div class="action-buttons">
+                <button type="submit"><i>Submit</i></button>
+                <button type="reset"><i>Reset</i></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
