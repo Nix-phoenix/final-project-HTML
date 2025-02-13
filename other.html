@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Khamsavanh Vanvilay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe4e1, #ffb6c1);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            width: 500px;
+        }
+
+        .main-headers{
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info-section {
+            background-color: #FFD700;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .food-section {
+            background-color: #ffcba4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+         input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+            display: block;
+            margin-top: 5px;
+        }
+         select {
+          width: 100px;
+          display: inline-block;
+         }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button, input[type="submit"], input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            color: white;
+        }
+
+        .file-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .buttons-area {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+         input[type="submit"]{
+           background-color:  #F0E68C;
+           color: black;
+        }
+
+         input[type="reset"]{
+           background-color:  #E6E6FA;
+           color: black;
+        }
+        .click_butoon{
+             background-color:  #90EE90;
+           color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "main-headers"><i>Mr Khamsavanh Vanvilay</i></h1>
+    <h1 class = "main-headers"><i>Number:75</i></h1>
+    <h1 class = "main-headers"><i>2COM2</i></h1>
+    <div class="container">
+        <h1 class ="main-headers"><i>Choose The Food menu</i></h1>
+        <form>
+            <div class = "info-section">
+                <label for="tel"><i>Tel</i>:</label>
+                <input type="text" id="tel" name="tel" placeholder="Add the phone number">
+
+                <label for="email"><i>E-mail</i>:</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your e-mail address">
+
+                <label for="name"><i>Name & Surname:</i></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="password"><i>Password:</i></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                <label for="address"><i>Address:</i></label>
+                <select id = "address">
+                    <option>Home</option>
+                    <option>Office</option>
+                    <option>other</option>
+                </select>
+
+                <label for="update"><i>Update:</i></label>
+                <textarea id="update" name="update" placeholder="Write your update..."></textarea>
+            </div>
+
+            <label for="upload"><i>Upload File:</i></label>
+            <div class="file-input">
+                <input type="file" id="upload" name="upload">
+            </div>
+
+            <div class ="buttons-area">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+                <button type = "button" class = "click_butoon"> Click </button>
+            </div>
+
+            <div class="food-section">
+                <label for="food"><i>Food Menu:</i></label>
+                <select name="food" id="food">
+                    <option value="pizza">Pizza</option>
+                    <option value="sushi">Sushi</option>
+                    <option value="steak">Steak</option>
+                    <option value="salad">Salad</option>
+                </select>
+
+                <button type="button">Cook</button>
+
+                <select name="list" id="list">
+                    <option value="vanbar">Vanbar</option>
+                    <option value="nana">Nana</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="pic">Pic</option>
+                </select>
+                <button type = "button" > Cook </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
